@@ -2,27 +2,93 @@
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
+:root {
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+
+    --eerie-black: #191716ff;
+    --royal-purple: #7d4ebcff;
+    --royal-purple-light: #a86cff;
+    --lavender-blush: #eaeaea;
+    --jet: #363230ff;
+    --jonquil: #f5cc00ff;
+
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: #2a2a2a;
+    color: #e4e4e4;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
-ol, ul,li {
+
+ol, ul, li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--cor-de-link);
+}
+
+button, a {
+    cursor: pointer;
+    color: #f0f0f0;
+    background: none;
+    border: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+
+}
+
+h1, h2, h3, h4 {
+    line-height: 145%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+section.all {
+    /*padding: 1rem;*/
+}
+
+section h3[class$="__title"], section h2[class$="__title"] {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 145%;
+}
+
+.all {
+    overflow-x: hidden;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -40,50 +106,371 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
-
+section.menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    padding: 0 1rem;
 }
+
+.menu header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu__title {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.menu header img {
+    margin-right: 1rem;
+}
+
+
+.menu nav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 1.5rem;
+    background-color: var(--royal-purple);
+
+    transform: translateX(100%);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+
+#menu-checkbox:checked ~ nav {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.menu nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu nav li {
+    text-align: center;
+    height: 100%;
+}
+
+.menu nav ul a {
+    display: block;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.menu nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu label {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.menu label span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.menu label span {
+    position: absolute;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.menu label span:nth-child(1) {
+    top: 20%;
+}
+
+.menu label span:nth-child(2) {
+    top: 50%;
+    width: 50%;
+}
+
+.menu label span:nth-child(3) {
+    top: 80%;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-checkbox:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+#menu-checkbox:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.menu .menu__title {
+    font-size: 2rem;
+}
+
 
 /*Sessão Title*/
 
-section.title{
-
+section.title {
+    padding: 3rem 1rem;
 }
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title__profile {
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    border: 2x solid var(--eerie-black);
+    margin: 2rem auto;
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+}
+
+.title__network__item {
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.title__network__item:hover {
+    background-color: var(--royal-purple);
+}
+
 
 /*Sessão About*/
 
-section.about{
+section.about {
+    padding: 2rem 1rem;
 
 }
 
+.about__subtitle {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+/*Sessão Skills*/
+
+section.skills {
+    padding: 3rem 1rem;
+    background-color: #222;
+}
+
+.skills__line {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills__box {
+    min-width: 150px;
+    max-width: 200px;
+    border-radius: 5px;
+    height: 150px;
+    background-color: #2a2a2a;
+    border: 2px solid #2f2f2f;
+    display: flex;
+    align-items: end;
+}
+
+.skills__box li {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+
 /*Sessão Hobbies*/
 
-section.hobbies{
-    
+section.hobbies {
+    padding: 3rem 1rem;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.hobbies__box {
+    background-color: #222;
+    border: 2px solid rgba(168, 108, 255, 0.1);
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+
+.hobbies__box li {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.hobbies__box li img {
+    display: block;
+    margin: 1rem auto;
 }
 
 /* Experiência Acadêmica*/
 
-section.academic{
+section.academic {
+    padding: 3rem 1rem;
+    background-color: #222;
+}
 
+.academic__courses__box {
+    margin: 1rem 0;
+}
+
+.academic__courses__item__title {
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
 }
 
 /* experiência*/
 
-section.experience{
+section.experience {
+    padding: 3rem 1rem;
+}
 
+.experiencie__box {
+    margin: 1.5rem 0;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experiencia__botao--repo, .experiencia__botao--demo {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.experiencia__botao--repo {
+    background-color: var(--royal-purple);
 }
 
 /*Contato*/
 
-section.formcontato{
-
+section.formcontato {
+    padding: 3rem 1rem;
+    background-color: #222;
 }
 
-/*footeer*/
+.formcontato--esquerda {
+    display: none;
+}
 
-section.footer{
-   
+.formcontato__subtext {
+    margin: 1rem 0;
+}
+
+.formcontato__subtext:nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formcontato__input {
+    padding: 1.75rem .5rem .25rem;
+}
+
+.formcontato__textarea {
+    padding: .5rem;
+}
+
+.formcontato__input, .formcontato__textarea {
+    font-size: 1.5rem;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    font-family: inherit;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 3px;
+    outline: transparent;
+}
+
+.formcontato__input:focus, .formcontato__textarea:focus {
+    border-bottom-color: var(--royal-purple-light);
+}
+
+.formcontato__botao {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    width: fit-content;
+    border: none;
+    background-color: var(--royal-purple);
+}
+
+.formcontato__input {
+    position: relative;
+}
+
+.formcontato__input::placeholder, .formcontato__textarea::placeholder {
+    transition: all .2s ease-in-out;
+    color: #f0f0f0;
+}
+
+.formcontato__input:focus::placeholder {
+    transform: translateY(-130%);
+    font-size: 1.2rem;
+    color: var(--royal-purple-light);
+}
+
+.formcontato__textarea:focus::placeholder {
+    color: var(--royal-purple-light);
+}
+
+
+/*footeer*/
+section.footer {
+    padding: 2rem 1rem;
+    background-color: var(--royal-purple);
+}
+
+.footer__rodape p {
+    text-align: center;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
@@ -92,39 +479,26 @@ utilize como referência os breakpoints @media abaixo*/
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
+    /* Menu */
+    /*title*/
+    /*Skills*/
+    /*Hobbies*/
+    /*Experiências acadêmicas*/
+    /*Expeirência profissional*/
 
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
 
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
+    /*Menu*/
+    /*Titulo*/
+    /*Sessão sobre*/
+    /*Skills*/
+    /*Hobbies*/
+    /*Formação Acadêmica*/
+    /*Experiência Profissional*/
+    /*Contato*/
+    /*Footer*/
 
 }
