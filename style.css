@@ -370,6 +370,10 @@ section.skills {
     margin: 1.5rem;
 }
 
+.skills__img img {
+    height: 48px;
+}
+
 /*Sessão Hobbies*/
 
 section.hobbies {
@@ -596,12 +600,17 @@ section.formcontato {
 /*footeer*/
 section.footer {
     padding: 2rem 1rem;
-    background-color: var(--royal-purple);
+    background-color: var(--jet);
 }
 
 .footer__rodape p {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
+
 
 /*Animations*/
 
@@ -812,23 +821,22 @@ utilize como referência os breakpoints @media abaixo*/
     /*Contato*/
     .formcontato__contacto {
         display: flex;
-        gap: 2rem;
+        gap: 5rem;
+        justify-content: space-evenly;
     }
 
     .formcontato--esquerda {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex: 1;
+        /*flex: 1;*/
     }
 
     .formcontato__img {
-        width: 50%;
-        height: 50%;
+        height: 300px;
     }
 
     .formcontato__text {
-        flex: 1;
     }
 
     /*Footer*/
