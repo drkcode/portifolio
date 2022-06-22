@@ -51,6 +51,7 @@ button, a {
     color: #f0f0f0;
     background: none;
     border: none;
+    font-family: inherit;
 }
 
 h1 {
@@ -180,6 +181,7 @@ section .menu .menu__title:after {
 
 .menu__list__item {
     text-align: center;
+    font-size: 1.75rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 100%;
 }
@@ -282,12 +284,17 @@ section.title {
 
 .title__network__item {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     transition: all .2s ease-in-out;
 }
 
 .title__network__item:hover {
     background-color: var(--royal-purple);
+}
+
+.title__bio {
+    font-size: 3.5rem;
+    font-weight: 500;
 }
 
 .title__bio span {
@@ -322,8 +329,15 @@ section.about {
 
 .about__subtitle {
     font-size: 2rem;
-    margin: 1.5rem 0;
+    margin: 3rem 0 1rem 0;
+
     font-weight: 500;
+    text-align: center;
+}
+
+.about__paragraph {
+    font-size: 1.75rem;
+    font-weight: 400;
 }
 
 /*Sessão Skills*/
@@ -355,7 +369,6 @@ section.skills {
     font-size: 1.5rem;
     margin: 1.5rem;
 }
-
 
 /*Sessão Hobbies*/
 
@@ -400,14 +413,56 @@ section.academic {
     background-color: #222;
 }
 
+.academic__courses__list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.academic__courses__list li {
+    text-align: center;
+}
+
 .academic__courses__box {
-    margin: 1rem 0;
+    margin: 5rem 0;
 }
 
 .academic__courses__item__title {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: .5rem;
     font-weight: 500;
+}
+
+.academic__courses__item__subtitle {
+    color: #d0d0d0;
+    font-weight: 400;
+}
+
+.academic__courses__item__subtitle p {
+    font-size: 1.75rem;
+}
+
+.academic__courses__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.academic__courses__box:nth-child(1) .academic__courses__item__img img{
+    width: 70%;
+}
+
+.academic__courses__item__img img{
+    width: 7rem;
+}
+
+.academic__courses__item__img span svg{
+    stroke: #e4e4e4;
+    fill: #e4e4e4;
+    width: 2rem;
 }
 
 /* experiência*/
@@ -436,12 +491,12 @@ section.experience {
 
 .experience__text {
     color: #a0a0a0;
+    font-weight: 400;
 }
-
 
 .experiencia__botao--repo, .experiencia__botao--demo {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .experience__demo {
@@ -467,26 +522,35 @@ section.formcontato {
     margin: 1rem 0;
 }
 
+.formcontato__subtext:nth-child(2) {
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
 .formcontato__subtext:nth-child(3) {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #a0a0a0;
 }
 
 .formcontato__form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .formcontato__input {
-    padding: 1.75rem .5rem .25rem;
+    padding: 2.5rem 1rem .25rem;
 }
 
 .formcontato__textarea {
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .formcontato__input, .formcontato__textarea {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     background-color: #2a2a2a;
     color: #f0f0f0;
     font-family: inherit;
@@ -501,7 +565,7 @@ section.formcontato {
 }
 
 .formcontato__botao {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     display: block;
     padding: 1rem;
     width: fit-content;
@@ -519,8 +583,8 @@ section.formcontato {
 }
 
 .formcontato__input:focus::placeholder {
-    transform: translateY(-130%);
-    font-size: 1.2rem;
+    transform: translateY(-170%);
+    font-size: 1.25rem;
     color: var(--royal-purple-light);
 }
 
@@ -541,7 +605,7 @@ section.footer {
 
 /*Animations*/
 
-@keyframes name-animation  {
+@keyframes name-animation {
     100% {
         color: #e4e4e4;
     }
@@ -573,6 +637,7 @@ utilize como referência os breakpoints @media abaixo*/
         left: auto;
         right: 0%;
     }
+
     /*title*/
     section.title {
         padding: 2rem;
@@ -586,7 +651,7 @@ utilize como referência os breakpoints @media abaixo*/
 
     .title__profile {
         order: 2;
-        margin: 0 5rem ;
+        margin: 0 5rem;
     }
 
     .title__container {
@@ -596,30 +661,26 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     .title__network {
-        order:  2;
+        order: 2;
         justify-content: left;
     }
 
     /*About*/
-
     section.about {
         padding: 2rem;
     }
 
     /*Skills*/
-
     section.skills {
         padding: 2rem;
     }
 
     /*Hobbies*/
-
     section.hobbies {
         padding: 2rem;
     }
 
     /*Experiências acadêmicas*/
-
     section.academic {
         padding: 2rem;
     }
@@ -635,7 +696,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Expeirência profissional*/
-
     section.experience {
         padding: 2rem;
     }
@@ -659,13 +719,20 @@ utilize como referência os breakpoints @media abaixo*/
 /*Desktop/Notebook*/
 @media (min-width: 980px) {
 
-    .all {
+    .menu,
+    .title__div,
+    .about__container,
+    .skills__container,
+    .hobbies__container,
+    .academic__container,
+    .experience__container,
+    .formcontato__contacto,
+    .footer__rodape {
         width: 980px;
         margin: 0 auto;
     }
 
     /*Menu*/
-
     #menu-checkbox {
         display: none;
     }
@@ -701,7 +768,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Titulo*/
-
     .title__bio {
         font-size: 3rem;
         margin: 2rem 0;
@@ -716,7 +782,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Sessão sobre*/
-
     .about__paragraph {
         font-size: 1.5rem;
         color: #bbb;
@@ -729,7 +794,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Skills*/
-
     .skills__line {
         margin: 0 auto;
         width: 90%;
@@ -737,7 +801,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Hobbies*/
-
     .hobbies__line {
         margin: auto;
         justify-content: space-between;
@@ -745,9 +808,29 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Formação Acadêmica*/
-
     /*Experiência Profissional*/
     /*Contato*/
+    .formcontato__contacto {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .formcontato--esquerda {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+    }
+
+    .formcontato__img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .formcontato__text {
+        flex: 1;
+    }
+
     /*Footer*/
 
 }

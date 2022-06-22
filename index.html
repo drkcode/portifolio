@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fonte do Projeto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 
     <title>Portifólio Pessoal</title>
 </head>
@@ -55,7 +55,7 @@
                     <li class="title__network__item"><a href="">Linkedin <img src="assets/icons/arrow.png"></a></li>
                     <li class="title__network__item"><a href="">Curriculo <img src="assets/icons/arrow.png"></a></li>
                 </ul>
-                <h2 class="title__bio">Olá, meu nome é <span>Darlisson.</span></h2>
+                <h2 class="title__bio">Olá,<br> meu nome é <span>Darlisson.</span></h2>
                 <h3 class="title__subsection">Eu sou desenvolvedor web em formação e atualmente estou
                     participando no projeto Oracle ONE na Alura.</h3>
             </div>
@@ -65,8 +65,7 @@
     <!-- Sessão sobre mim -->
     <section class="about">
         <div class="about__container">
-
-            <h3 class="about__title">Sobre mim</h3>
+            <h3 class="about__title" id="sobremim">Sobre mim</h3>
             <p class="about__paragraph">
                 Sou estudante de programação e estudo javascript, nodejs, java, reactjs e vuejs. Me considero uma pessoa
                 autodidata, pois muito do que aprendi sendo técnico em informática foi sozinho e muito do que aprendo
@@ -86,11 +85,11 @@
         </div>
     </section>
 
-
     <!-- Sessão de Skills/Habilidades -->
     <section class="skills" >
-        <h3 class="skills__title" id="skills">Skills</h3>
-        <div class="skills__line">
+        <div class="skills__container">
+            <h3 class="skills__title" id="skills">Skills</h3>
+            <div class="skills__line">
             <div class="skills__box">
                 <ul>
                     <li class="skills__img"><img src="assets/icons/html.png"></li>
@@ -133,12 +132,14 @@
                 </ul>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Sessão de Hobbies -->
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__line">
+        <div class="hobbies__container">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__line">
             <div class="hobbies__box">
                 <ul>
                     <li class="hobbies__img"><img src="assets/icons/sports.png" alt=""></li>
@@ -175,18 +176,20 @@
             </div>
 
         </div>
+        </div>
     </section>
 
     <!-- Sessão de Histórico Acadêmico -->
     <section class="academic">
-        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-        <div class="academic__courses">
+        <div class="academic__container">
+            <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+            <div class="academic__courses">
 
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="" alt=""></li>
-                    <li class="academic__courses__item__title"><h4>Análise e desenvolvimento de sistemas.</h4></li>
+                    <li class="academic__courses__item__img"><img src="assets/logo-unifacema.png" alt="Logo com o Unifacema"></li>
+                    <li class="academic__courses__item__title"><h4>Análise e Desenvolvimento de Sistemas.</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2015/Incompleto - UNIFACEMA</p></li>
                 </ul>
             </div>
@@ -194,7 +197,15 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="" alt=""></li>
+                    <li class="academic__courses__item__img">
+                        <img src="assets/logo-one-mini.png" alt="Logo com texto Academind">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                        <img src="assets/logo-alura.png" alt="Logo com text Udemy">
+                    </li>
                     <li class="academic__courses__item__title"><h4>Programa ONE - Oracle Next Education</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - Alura</p></li>
                 </ul>
@@ -203,7 +214,15 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
+                    <li class="academic__courses__item__img">
+                        <img src="assets/academind.svg" alt="Logo com texto Academind">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
+                    </li>
                     <li class="academic__courses__item__title"><h4>React - The Complete Guide</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - Academind (Udemy)</p></li>
                 </ul>
@@ -212,7 +231,15 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
+                    <li class="academic__courses__item__img">
+                        <img src="assets/academind.svg" alt="Logo com texto Academind">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
+                    </li>
                     <li class="academic__courses__item__title"><h4>NodeJS - The Complete Guide</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - Academind (Udemy)</p></li>
                 </ul>
@@ -221,21 +248,24 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
+                    <li class="academic__courses__item__img">
+                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
+                    </li>
                     <li class="academic__courses__item__title"><h4>Java - POO</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - Nelio Alves (Udemy)</p></li>
                 </ul>
             </div>
 
         </div>
+        </div>
     </section>
 
     <!-- Sessão de Experiência Profissional/Projetos-->
     <section class="experience">
+        <div class="experience__container">
+            <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
 
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-
-        <div class="experiencie__box">
+            <div class="experiencie__box">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
             <img class="experience__img" src="assets/projects-mockups/hangman-game.png">
             <div class="experience__info">
@@ -250,7 +280,7 @@
             </div>
         </div>
 
-        <div class="experiencie__box">
+            <div class="experiencie__box">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
             <img class="experience__img" src="assets/projects-mockups/decodificador.png">
             <div class="experience__info">
@@ -268,7 +298,7 @@
             </div>
         </div>
 
-        <div class="experiencie__box">
+            <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
             <img class="experience__img" src="assets/projects-mockups/awstodo.png">
             <div class="experience__info">
@@ -283,7 +313,7 @@
             </div>
         </div>
 
-        <div class="experiencie__box">
+            <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
             <img class="experience__img" src="assets/projects-mockups/rock_paper_scissors.png">
             <div class="experience__info">
@@ -298,7 +328,7 @@
             </div>
         </div>
 
-        <div class="experiencie__box">
+            <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
             <img class="experience__img" src="assets/projects-mockups/dlassessoria.png">
             <div class="experience__info">
@@ -310,20 +340,20 @@
                 </div>
             </div>
         </div>
-
+        </div>
     </section>
 
     <!-- Sessão de Contato -->
     <section class="formcontato">
         <div id="contato" class="formcontato__contacto">
             <div class="formcontato--esquerda">
-                <img class="formcontato__img" src="assets\contact_image.png">
+                <img class="formcontato__img" src="assets/undraw_mail.png">
             </div>
             <div class="formcontato__text">
                 <h2 class="formcontato__title">Contato</h2>
                 <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido
-                    possível. </h3>
+<!--                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido-->
+<!--                    possível. </h3>-->
                 <form class="formcontato__form">
                     <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
                     <input class="formcontato__input" type="email" id="email" placeholder="Email">
