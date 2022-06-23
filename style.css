@@ -599,7 +599,6 @@ section.formcontato {
 /*footeer*/
 section.footer {
     padding: 2rem 1rem;
-    background-color: var(--jet);
 }
 
 .footer__rodape p {
