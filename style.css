@@ -330,7 +330,6 @@ section.about {
 .about__subtitle {
     font-size: 2rem;
     margin: 3rem 0 1rem 0;
-
     font-weight: 500;
     text-align: center;
 }
@@ -800,6 +799,10 @@ utilize como referência os breakpoints @media abaixo*/
     .about__subtitle {
         font-size: 2.5rem;
 
+    }
+
+    .about__paragraph {
+        font-size: 1.75rem;
     }
 
     /*Skills*/
