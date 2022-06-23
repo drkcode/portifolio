@@ -302,7 +302,7 @@ section.title {
     color: transparent;
 
     animation: name-animation .3s ease forwards;
-    animation-delay: .5s;
+    animation-delay: 1s;
 }
 
 .title__bio span:after {
@@ -313,10 +313,10 @@ section.title {
     content: "";
     background-color: var(--jonquil);
 
-    opacity: 1;
+    opacity: 0;
 
     animation: box-animation 1s ease forwards;
-    animation-delay: .5s;
+    animation-delay: 1s;
 }
 
 
@@ -622,12 +622,13 @@ section.footer {
     0% {
         width: 100%;
         left: 0%;
+        opacity: 1;
 
     }
     100% {
         width: 0%;
         left: 100%;
-
+        opacity: 1;
     }
 }
 
