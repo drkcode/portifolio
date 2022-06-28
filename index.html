@@ -1,384 +1,639 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Fonte do Projeto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/icons/logo-light.png" type="image/x-icon">
-    <title>Darlisson L. Silva</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/logo-light.png"
+      type="image/x-icon"
+    />
 
-<section class="all">
-    <!-- Sessão de Menu  -->
-    <section class="menu">
+    <title>Darlisson L. Silva</title>
+  </head>
+  <body>
+    <section class="all">
+      <!-- Sessão de Menu  -->
+      <section class="menu">
         <header>
-            <img src="assets/icons/logo-light.png">
-            <h3 class="menu__title">Darlisson L. Silva</h3>
+          <img src="assets/icons/logo-light.png" />
+          <h3 class="menu__title">Darlisson L. Silva</h3>
         </header>
-        <input type="checkbox" id="menu-checkbox" >
+        <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" tabindex="0">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
 
         <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="#contato">darlisson.dev@gmail.com</a></li>
-            </ul>
+          <ul class="menu__list">
+            <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
+            <li class="menu__list__item"><a href="#skills">Skills</a></li>
+            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+            <li class="menu__list__item">
+              <a href="#formacao">Formações e Cursos</a>
+            </li>
+            <li class="menu__list__item"><a href="#xp">Experiência</a></li>
+            <li class="menu__list__item">
+              <a href="#contato">darlisson.dev@gmail.com</a>
+            </li>
+          </ul>
         </nav>
-    </section>
+      </section>
 
-    <!-- Sessão de Header/Title/Hero -->
-    <section class="title">
+      <!-- Sessão de Header/Title/Hero -->
+      <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile2.png">
-            <div class="title__container" id="#sobremim">
-                <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="http://github.com/drkcode">Github <img src="assets/icons/arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://br.linkedin.com/in/darlisson-limeira-95938a171">Linkedin <img src="assets/icons/arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets/icons/arrow.png"></a></li>
-                </ul>
-                <h2 class="title__bio">Olá,<br> meu nome é <span>Darlisson.</span></h2>
-                <h3 class="title__subsection">Eu sou desenvolvedor web em formação e atualmente estou
-                    participando do projeto Oracle ONE na Alura.</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container">
-            <h3 class="about__title" id="sobremim">Sobre mim</h3>
-            <p class="about__paragraph">
-                Sou estudante de programação com conhecimentos em Javascript, Nodejs, Java, React e Angular. Considero-me uma pessoa
-                autodidata, pois muito do que aprendi sendo técnico em informática foi sozinho e muito do que aprendo
-                estudando programação é sozinho e através de pesquisas, gosto muito de jogos eletrônicos, música, política e esportes.
-            </p>
-
-            <h4 class="about__subtitle">Minha história com programação</h4>
-            <p class="about__paragraph">
-                Minha história com programação começou na metade de 2015, foi quando entrei na universidade e foi meu
-                primeiro contato com uma linguagem de programção e todo esse universo, mas infelizmente não tive
-                condições para continuar cursando, passei uns 2 anos sem ver nada e então
-                decidi que iria voltar a estudar aos poucos sozinho e desde então estou estudando por conta própria e
-                buscando oportunidades.
-            </p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-
-        </div>
-    </section>
-
-    <!-- Sessão de Skills/Habilidades -->
-    <section class="skills" >
-        <div class="skills__container">
-            <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/html.png"></li>
-                    <li class="skills__name">Html 5</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/js.png" alt=""></li>
-                    <li class="skills__name">Javascript</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/java.png" alt=""></li>
-                    <li class="skills__name">Java</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/nodejs.png" alt=""></li>
-                    <li class="skills__name">Node JS</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/react.png" alt=""></li>
-                    <li class="skills__name">React</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/icons/css.png" alt=""></li>
-                    <li class="skills__name">CSS</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <div class="hobbies__container">
-            <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/icons/sports.png" alt=""></li>
-                    <li class="hobbies__name">Praticar corrida</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/icons/guitar.png" alt=""></li>
-                    <li class="hobbies__name">Tocar violão</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/icons/headphone.png" alt=""></li>
-                    <li class="hobbies__name">Ouvir música</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/icons/tv.png" alt=""></li>
-                    <li class="hobbies__name">Assistir séries</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/icons/forkspoon.png" alt=""></li>
-                    <li class="hobbies__name">Cozinhar</li>
-                </ul>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <div class="academic__container">
-            <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-            <div class="academic__courses">
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="assets/logo-unifacema.png" alt="Logo com o Unifacema"></li>
-                    <li class="academic__courses__item__title"><h4>Análise e Desenvolvimento de Sistemas.</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2015/Incompleto - UNIFACEMA</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img">
-                        <img src="assets/logo-one-mini.png" alt="Logo com texto Academind">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                            </svg>
-                        </span>
-                        <img src="assets/logo-alura.png" alt="Logo com text Udemy">
-                    </li>
-                    <li class="academic__courses__item__title"><h4>Programa ONE - Oracle Next Education</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Alura</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img">
-                        <img src="assets/academind.svg" alt="Logo com texto Academind">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                            </svg>
-                        </span>
-                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
-                    </li>
-                    <li class="academic__courses__item__title"><h4>React - The Complete Guide</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Academind (Udemy)</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img">
-                        <img src="assets/academind.svg" alt="Logo com texto Academind">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                            </svg>
-                        </span>
-                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
-                    </li>
-                    <li class="academic__courses__item__title"><h4>NodeJS - The Complete Guide</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Academind (Udemy)</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img">
-                        <img src="assets/logo-udemy.svg" alt="Logo com text Udemy">
-                    </li>
-                    <li class="academic__courses__item__title"><h4>Java - POO</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - Nelio Alves (Udemy)</p></li>
-                </ul>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <div class="experience__container">
-            <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-
-            <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/projects-mockups/hangman-game.png">
-            <div class="experience__info">
-                <h2 class="experience__title-info">Hangman Game</h2>
-                <h3 class="experience__text">Challenge Oracle - HTML, CSS e JavaScript</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/drkcode/jogo-da-forca-2-challenge-one"><button
-                            class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href="https://drkcode.github.io/jogo-da-forca-2-challenge-one/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-            <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/projects-mockups/decodificador.png">
-            <div class="experience__info">
-                <h2 class="experience__title-info">Decodificador e decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura - HTML, CSS e Javascript</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo">
-                        <a href="https://github.com/drkcode/decodificador-2-challenge-one">
-                            <button class="experiencia__botao--repo">Repositório</button>
-                        </a>
-                    </span>
-                    <span class="experience__demo"><a href="https://drkcode.github.io/decodificador-2-challenge-one"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-            <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/projects-mockups/awstodo.png">
-            <div class="experience__info">
-                <h2 class="experience__title-info">TODO App</h2>
-                <h3 class="experience__text">Odin Project - HTML, CSS e Javascript</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/drkcode/awstodoapp"><button
-                            class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href="https://awstodoapp.netlify.app/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-            <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/projects-mockups/rock_paper_scissors.png">
-            <div class="experience__info">
-                <h2 class="experience__title-info">Rock, paper & scissors Game</h2>
-                <h3 class="experience__text">Odin Project - HTML, CSS e Javascript</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/drkcode/Rock-Paper-Scissors"><button
-                            class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href="https://drkcode.github.io/Rock-Paper-Scissors/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                </div>
-            </div>
-        </div>
-
-            <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/projects-mockups/dlassessoria.png">
-            <div class="experience__info">
-                <h2 class="experience__title-info">DL Assessoria Acadêmica e Educacional</h2>
-                <h3 class="experience__text">Projeto privado</h3>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://dlassessoriaedu.vercel.app/"><button class="experiencia__botao--repo">Ver a página</button></a></span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Contato -->
-    <section class="formcontato">
-        <div id="contato" class="formcontato__contacto">
-            <div class="formcontato--esquerda">
-                <a href="https://storyset.com/communication">
-                <img class="formcontato__img" src="assets/contact-img.png" alt="Communication illustrations by Storyset">
+          <img class="title__profile" src="assets\profile2.png" />
+          <div class="title__container" id="#sobremim">
+            <ul class="title__network">
+              <!-- Ponha os links de suas redes sociais favoritas -->
+              <li class="title__network__item">
+                <a href="http://github.com/drkcode"
+                  >Github <img src="assets/icons/arrow.png" />
                 </a>
-            </div>
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">Contato</h2>
-                <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-<!--                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido-->
-<!--                    possível. </h3>-->
-                <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                              placeholder="Sua mensagem"></textarea>
-                    <button class="formcontato__botao">Enviar mensagem</button>
-                </form>
-            </div>
+              </li>
+              <li class="title__network__item">
+                <a href="https://br.linkedin.com/in/darlisson-limeira-95938a171"
+                  >Linkedin <img src="assets/icons/arrow.png"
+                /></a>
+              </li>
+              <li class="title__network__item">
+                <a href="">Curriculo <img src="assets/icons/arrow.png" /></a>
+              </li>
+            </ul>
+            <h2 class="title__bio">
+              Olá,<br />
+              meu nome é <span>Darlisson.</span>
+            </h2>
+            <h3 class="title__subsection">
+              Eu sou desenvolvedor web em formação e atualmente estou
+              participando do projeto Oracle ONE na Alura.
+            </h3>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Sessão de Footer/Rodapé-->
-    <section class="footer">
+      <!-- Sessão sobre mim -->
+      <section class="about">
+        <div class="about__container">
+          <h3 class="about__title" id="sobremim">Sobre mim</h3>
+          <p class="about__paragraph">
+            Sou estudante de programação com conhecimentos em Javascript,
+            Nodejs, Java, React e Angular. Considero-me uma pessoa autodidata,
+            pois muito do que aprendi sendo técnico em informática foi sozinho e
+            muito do que aprendo estudando programação é sozinho e através de
+            pesquisas, gosto muito de jogos eletrônicos, música, política e
+            esportes.
+          </p>
+
+          <h4 class="about__subtitle">Minha história com programação</h4>
+          <p class="about__paragraph">
+            Minha história com programação começou na metade de 2015, foi quando
+            entrei na universidade e foi meu primeiro contato com uma linguagem
+            de programção e todo esse universo, mas infelizmente não tive
+            condições para continuar cursando e passei a estudar aos poucos
+            sozinho e buscando oportunidades.
+          </p>
+          <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
+        </div>
+      </section>
+
+      <!-- Sessão de Skills/Habilidades -->
+      <section class="skills">
+        <div class="skills__container">
+          <h3 class="skills__title" id="skills">Skills</h3>
+          <div class="skills__line">
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img"><img src="assets/icons/html.png" /></li>
+                <li class="skills__name">Html 5</li>
+              </ul>
+            </div>
+
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img">
+                  <img src="assets/icons/js.png" alt="" />
+                </li>
+                <li class="skills__name">Javascript</li>
+              </ul>
+            </div>
+
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img">
+                  <img src="assets/icons/java.png" alt="" />
+                </li>
+                <li class="skills__name">Java</li>
+              </ul>
+            </div>
+
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img">
+                  <img src="assets/icons/nodejs.png" alt="" />
+                </li>
+                <li class="skills__name">Node JS</li>
+              </ul>
+            </div>
+
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img">
+                  <img src="assets/icons/react.png" alt="" />
+                </li>
+                <li class="skills__name">React</li>
+              </ul>
+            </div>
+
+            <div class="skills__box">
+              <ul>
+                <li class="skills__img">
+                  <img src="assets/icons/css.png" alt="" />
+                </li>
+                <li class="skills__name">CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão de Hobbies -->
+      <section class="hobbies" id="hobbies">
+        <div class="hobbies__container">
+          <h3 class="hobbies__title">Hobbies</h3>
+          <div class="hobbies__line">
+            <div class="hobbies__box">
+              <ul>
+                <li class="hobbies__img">
+                  <img src="assets/icons/sports.png" alt="" />
+                </li>
+                <li class="hobbies__name">Praticar corrida</li>
+              </ul>
+            </div>
+
+            <div class="hobbies__box">
+              <ul>
+                <li class="hobbies__img">
+                  <img src="assets/icons/guitar.png" alt="" />
+                </li>
+                <li class="hobbies__name">Tocar violão</li>
+              </ul>
+            </div>
+
+            <div class="hobbies__box">
+              <ul>
+                <li class="hobbies__img">
+                  <img src="assets/icons/headphone.png" alt="" />
+                </li>
+                <li class="hobbies__name">Ouvir música</li>
+              </ul>
+            </div>
+
+            <div class="hobbies__box">
+              <ul>
+                <li class="hobbies__img">
+                  <img src="assets/icons/tv.png" alt="" />
+                </li>
+                <li class="hobbies__name">Assistir séries</li>
+              </ul>
+            </div>
+
+            <div class="hobbies__box">
+              <ul>
+                <li class="hobbies__img">
+                  <img src="assets/icons/forkspoon.png" alt="" />
+                </li>
+                <li class="hobbies__name">Cozinhar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão de Histórico Acadêmico -->
+      <section class="academic">
+        <div class="academic__container">
+          <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+          <div class="academic__courses">
+            <div class="academic__courses__box">
+              <ul class="academic__courses__list">
+                <!-- Insira a logo de seu local de formação -->
+                <li class="academic__courses__item__img">
+                  <img
+                    src="assets/logo-unifacema.png"
+                    alt="Logo com o Unifacema"
+                  />
+                </li>
+                <li class="academic__courses__item__title">
+                  <h4>Análise e Desenvolvimento de Sistemas.</h4>
+                </li>
+                <li class="academic__courses__item__subtitle">
+                  <p>2015/Incompleto - UNIFACEMA</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="academic__courses__box">
+              <ul class="academic__courses__list">
+                <!-- Insira a logo de seu local de formação -->
+                <li class="academic__courses__item__img">
+                  <img
+                    src="assets/logo-one-mini.png"
+                    alt="Logo com texto Academind"
+                  />
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </span>
+                  <img src="assets/logo-alura.png" alt="Logo com text Udemy" />
+                </li>
+                <li class="academic__courses__item__title">
+                  <h4>Programa ONE - Oracle Next Education</h4>
+                </li>
+                <li class="academic__courses__item__subtitle">
+                  <p>Em andamento - Alura</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="academic__courses__box">
+              <ul class="academic__courses__list">
+                <!-- Insira a logo de seu local de formação -->
+                <li class="academic__courses__item__img">
+                  <img
+                    src="assets/academind.svg"
+                    alt="Logo com texto Academind"
+                  />
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </span>
+                  <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
+                </li>
+                <li class="academic__courses__item__title">
+                  <h4>React - The Complete Guide</h4>
+                </li>
+                <li class="academic__courses__item__subtitle">
+                  <p>Em andamento - Academind (Udemy)</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="academic__courses__box">
+              <ul class="academic__courses__list">
+                <!-- Insira a logo de seu local de formação -->
+                <li class="academic__courses__item__img">
+                  <img
+                    src="assets/academind.svg"
+                    alt="Logo com texto Academind"
+                  />
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </span>
+                  <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
+                </li>
+                <li class="academic__courses__item__title">
+                  <h4>NodeJS - The Complete Guide</h4>
+                </li>
+                <li class="academic__courses__item__subtitle">
+                  <p>Em andamento - Academind (Udemy)</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="academic__courses__box">
+              <ul class="academic__courses__list">
+                <!-- Insira a logo de seu local de formação -->
+                <li class="academic__courses__item__img">
+                  <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
+                </li>
+                <li class="academic__courses__item__title">
+                  <h4>Java - POO</h4>
+                </li>
+                <li class="academic__courses__item__subtitle">
+                  <p>Em andamento - Nelio Alves (Udemy)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão de Experiência Profissional/Projetos-->
+      <section class="experience">
+        <div class="experience__container">
+          <h2 class="experience__section__title" id="xp">
+            Experiência Profissional
+          </h2>
+
+          <div class="experiencie__box">
+            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <img
+              class="experience__img"
+              src="assets/projects-mockups/hangman-game.png"
+            />
+            <div class="experience__info">
+              <h2 class="experience__title-info">Hangman Game</h2>
+              <h3 class="experience__text">
+                Challenge Oracle - HTML, CSS e JavaScript
+              </h3>
+              <div class="experience__description">
+                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                <span class="experience__repo"
+                  ><a
+                    href="https://github.com/drkcode/jogo-da-forca-2-challenge-one"
+                    ><button class="experiencia__botao--repo">
+                      Repositório
+                    </button></a
+                  ></span
+                >
+                <span class="experience__demo"
+                  ><a
+                    href="https://drkcode.github.io/jogo-da-forca-2-challenge-one/"
+                    ><button class="experiencia__botao--demo">
+                      Ver demo
+                    </button></a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="experiencie__box">
+            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <img
+              class="experience__img"
+              src="assets/projects-mockups/decodificador.png"
+            />
+            <div class="experience__info">
+              <h2 class="experience__title-info">
+                Codificador e decodificador de texto
+              </h2>
+              <h3 class="experience__text">
+                Challenge Alura - HTML, CSS e Javascript
+              </h3>
+              <div class="experience__description">
+                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                <span class="experience__repo">
+                  <a
+                    href="https://github.com/drkcode/decodificador-2-challenge-one"
+                  >
+                    <button class="experiencia__botao--repo">
+                      Repositório
+                    </button>
+                  </a>
+                </span>
+                <span class="experience__demo"
+                  ><a
+                    href="https://drkcode.github.io/decodificador-2-challenge-one"
+                    ><button class="experiencia__botao--demo">
+                      Ver demo
+                    </button></a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="experiencie__box">
+            <!-- Insira a logo de seu projeto/trabalho -->
+            <img
+              class="experience__img"
+              src="assets/projects-mockups/awstodo.png"
+            />
+            <div class="experience__info">
+              <h2 class="experience__title-info">ToDo App</h2>
+              <h3 class="experience__text">
+                Odin Project - HTML, CSS e Javascript
+              </h3>
+              <div class="experience__description">
+                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                <span class="experience__repo"
+                  ><a href="https://github.com/drkcode/awstodoapp"
+                    ><button class="experiencia__botao--repo">
+                      Repositório
+                    </button></a
+                  ></span
+                >
+                <span class="experience__demo"
+                  ><a href="https://awstodoapp.netlify.app/"
+                    ><button class="experiencia__botao--demo">
+                      Ver demo
+                    </button></a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="experiencie__box">
+            <!-- Insira a logo de seu projeto/trabalho -->
+            <img
+              class="experience__img"
+              src="assets/projects-mockups/rock_paper_scissors.png"
+            />
+            <div class="experience__info">
+              <h2 class="experience__title-info">
+                Rock, paper & scissors Game
+              </h2>
+              <h3 class="experience__text">
+                Odin Project - HTML, CSS e Javascript
+              </h3>
+              <div class="experience__description">
+                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                <span class="experience__repo"
+                  ><a href="https://github.com/drkcode/Rock-Paper-Scissors"
+                    ><button class="experiencia__botao--repo">
+                      Repositório
+                    </button></a
+                  ></span
+                >
+                <span class="experience__demo"
+                  ><a href="https://drkcode.github.io/Rock-Paper-Scissors/"
+                    ><button class="experiencia__botao--demo">
+                      Ver demo
+                    </button></a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="experiencie__box">
+            <!-- Insira a logo de seu projeto/trabalho -->
+            <img
+              class="experience__img"
+              src="assets/projects-mockups/dlassessoria.png"
+            />
+            <div class="experience__info">
+              <h2 class="experience__title-info">
+                DL Assessoria Acadêmica e Educacional
+              </h2>
+              <h3 class="experience__text">Projeto privado</h3>
+              <div class="experience__description">
+                <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                <span class="experience__repo"
+                  ><a href="https://dlassessoriaedu.vercel.app/"
+                    ><button class="experiencia__botao--repo">
+                      Ver a página
+                    </button></a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão de Contato -->
+      <section class="formcontato">
+        <div id="contato" class="formcontato__contacto">
+          <div class="formcontato--esquerda">
+            <a href="https://storyset.com/communication">
+              <img
+                class="formcontato__img"
+                src="assets/contact-img.png"
+                alt="Communication illustrations by Storyset"
+              />
+            </a>
+          </div>
+          <div class="formcontato__text">
+            <h2 class="formcontato__title">Contato</h2>
+            <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
+            <!--                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido-->
+            <!--                    possível. </h3>-->
+            <form method="post" class="formcontato__form" id="form-contato">
+              <input
+                class="formcontato__input"
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome"
+                spellcheck="false"
+                autocapitalize="on"
+                required
+                value="darlisson"
+              />
+              <input
+                class="formcontato__input"
+                id="email"
+                name="email"
+                placeholder="Email"
+                spellcheck="false"
+                required
+                value="darlisson@email.com"
+              />
+              <input
+                class="formcontato__input"
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Assunto"
+                spellcheck="false"
+                autocapitalize="on"
+                required
+                value="teste 1"
+              />
+              <textarea
+                class="formcontato__textarea"
+                rows="5"
+                id="mensagem"
+                name="mensagem"
+                placeholder="Sua mensagem"
+                spellcheck="false"
+                autocapitalize="on"
+                required
+              >
+mensagem de teste</textarea
+              >
+              <button class="formcontato__botao">Enviar mensagem</button>
+            </form>
+            <span
+              class="hidden-message formcontato__result formcontato__result--success"
+              >Email enviado com sucesso!</span
+            >
+            <span
+              class="hidden-message formcontato__result formcontato__result--error"
+              >Ops! Deu algo errado.<br />Tente novamente ou
+              <a href="mailto:darlisson.dev@gmail.com"
+                >use seu aplicativo de email</a
+              ></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão de Footer/Rodapé-->
+      <section class="footer">
         <div class="footer__rodape">
-            <p>Desenvolvido por Darlisson L. Silva <a href="https://github.com/drkcode"><img src="assets/icons/icon-github.svg" alt="logo github" /></a></p>
-            <p>2022</p>
-
+          <p>
+            Desenvolvido por Darlisson L. Silva
+            <a href="https://github.com/drkcode"
+              ><img src="assets/icons/icon-github.svg" alt="logo github"
+            /></a>
+          </p>
+          <p>2022</p>
         </div>
+      </section>
     </section>
-</section>
-<!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
-</body>
+    <!-- Script Linkado do seu documento de JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="validate.js"></script>
+  </body>
 </html>
-
