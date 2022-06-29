@@ -1,18 +1,26 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 :root {
-  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-  --eerie-black: #191716ff;
-  --royal-purple: #7d4ebcff;
-  --royal-purple-light: #a86cff;
-  --lavender-blush: #eaeaea;
-  --jet: #292524;
-  --jonquil: #f5cc00ff;
+  /*--eerie-black: #191716ff;*/
+  /*--royal-purple: #7d4ebcff;*/
+  /*--royal-purple-light: #a86cff;*/
+  /*--lavender-blush: #eaeaea;*/
+  /*--jet: #292524;*/
+  --jonquil: #f5cc00;
+  --jade: #04aa6d;
+  --red-crayola: #ec2850;
 
   font-size: 62.5%;
+
+  --platinum: #e2e2e2;
+  --quick-silver: #a0a0a0;
+  --battleship-grey: #6f6f6f;
+  --lavender-blue: #e1d0f9;
+  --medium-purple: #a86cff;
+  --royal-purple: #7d4ebc;
+  --jet-2: #2f2f2f;
+  --jet: #2c2c2c;
+  --eerie-black: #212121;
+  --eerie-black-2: #242424;
 }
 
 html {
@@ -27,8 +35,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #252525;
-  color: #e2e2e2;
+  background-color: var(--eerie-black);
+  color: var(--platinum);
   font-family: "Raleway", serif;
   margin: 0;
   padding: 0;
@@ -48,7 +56,7 @@ a {
 button,
 a {
   cursor: pointer;
-  color: #f0f0f0;
+  color: inherit;
   font-weight: 500;
   background: none;
   border: none;
@@ -99,7 +107,7 @@ section h2[class$="__title"]:after {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
-  background-color: var(--royal-purple-light);
+  background-color: var(--medium-purple);
 }
 
 p {
@@ -111,20 +119,7 @@ p {
   overflow-x: hidden;
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sessão Menu*/
+/* Sessão Menu*/
 
 section.menu {
   display: flex;
@@ -161,7 +156,7 @@ section .menu .menu__title:after {
   left: 0;
   top: 100%;
   font-size: 1.5rem;
-  background-color: #2a2a2a;
+  background-color: var(--eerie-black-2);
 
   transform: translateX(100%);
 
@@ -212,7 +207,7 @@ section .menu .menu__title:after {
   top: 50%;
   height: 2px;
   width: 100%;
-  background-color: #888;
+  background-color: var(--battleship-grey);
 }
 
 .menu label span {
@@ -253,7 +248,7 @@ section .menu .menu__title:after {
 }
 
 #menu-checkbox:checked + label span {
-  background-color: var(--royal-purple-light);
+  background-color: var(--royal-purple);
 }
 
 .menu .menu__title {
@@ -291,13 +286,13 @@ section.title {
   flex: 1;
   text-align: center;
   font-size: 1.75rem;
-  background-color: #2e2e2e;
+  background-color: var(--jet);
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
 
 .title__network__item a {
-  color: #e1d0f9;
+  color: var(--lavender-blue);
 }
 
 .title__network__item:hover {
@@ -340,7 +335,7 @@ section.about {
 .about__subtitle {
   font-size: 2.25rem;
   margin: 3rem 0;
-  color: var(--royal-purple-light);
+  color: var(--medium-purple);
 
   font-weight: 500;
   text-align: center;
@@ -355,7 +350,7 @@ section.about {
 
 section.skills {
   padding: 3rem 1rem;
-  background-color: #222;
+  background-color: var(--eerie-black-2);
 }
 
 .skills__line {
@@ -367,8 +362,7 @@ section.skills {
 
 .skills__box {
   border-radius: 5px;
-  background-color: #2a2a2a;
-  border: 2px solid #2f2f2f;
+  background-color: var(--jet);
   display: flex;
   align-items: end;
 }
@@ -397,8 +391,7 @@ section.hobbies {
 
 .hobbies__box {
   display: flex;
-  background-color: #2a2a2a;
-  border: 2px solid #2f2f2f;
+  background-color: var(--jet);
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -419,7 +412,7 @@ section.hobbies {
 
 section.academic {
   padding: 3rem 1rem;
-  background-color: #222;
+  background-color: var(--eerie-black-2);
 }
 
 .academic__courses__list {
@@ -452,7 +445,7 @@ section.academic {
 }
 
 .academic__courses__item__subtitle {
-  color: #d0d0d0;
+  color: var(--quick-silver);
   font-weight: 400;
 }
 
@@ -468,9 +461,9 @@ section.academic {
   width: 7rem;
 }
 
-.academic__courses__item__img span svg {
-  stroke: #e4e4e4;
-  fill: #e4e4e4;
+.academic__courses__item__icon--plus {
+  stroke: var(--platinum);
+  fill: var(--platinum);
   width: 2rem;
 }
 
@@ -504,7 +497,7 @@ section.experience {
 }
 
 .experience__text {
-  color: #a0a0a0;
+  color: var(--quick-silver);
   font-weight: 400;
 }
 
@@ -513,7 +506,7 @@ section.experience {
   padding: 1rem 1.5rem;
   font-size: 1.75rem;
   border-radius: 5px;
-  color: #e1d0f9;
+  color: var(--lavender-blue);
 }
 
 .experience__demo {
@@ -521,7 +514,7 @@ section.experience {
 }
 
 .experiencia__botao--demo {
-  background-color: #2e2e2e;
+  background-color: var(--jet);
 }
 
 .experiencia__botao--repo {
@@ -531,7 +524,7 @@ section.experience {
 /*Contato*/
 section.formcontato {
   padding: 3rem 1rem;
-  background-color: #222;
+  background-color: var(--eerie-black-2);
 }
 
 .formcontato--esquerda {
@@ -547,13 +540,14 @@ section.formcontato {
   text-align: center;
   font-weight: 400;
   margin: 2rem 0;
+  color: var(--lavender-blue);
 }
 
-.formcontato__subtext:nth-child(3) {
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: #a0a0a0;
-}
+/*.formcontato__subtext:nth-child() {*/
+/*  font-size: 1.75rem;*/
+/*  font-weight: 400;*/
+/*  color: red;*/
+/*}*/
 
 .formcontato__form {
   display: flex;
@@ -572,8 +566,8 @@ section.formcontato {
 .formcontato__input,
 .formcontato__textarea {
   font-size: 1.75rem;
-  background-color: #2a2a2a;
-  color: #f0f0f0;
+  background-color: var(--jet);
+  color: var(--platinum);
   font-family: inherit;
   border: none;
   border-bottom: 2px solid transparent;
@@ -583,7 +577,7 @@ section.formcontato {
 
 .formcontato__input:focus,
 .formcontato__textarea:focus {
-  border-bottom-color: var(--royal-purple-light);
+  border-bottom-color: var(--medium-purple);
 }
 
 .formcontato__botao {
@@ -611,7 +605,7 @@ section.formcontato {
 .formcontato__input:focus::placeholder {
   transform: translateY(-170%);
   font-size: 1.25rem;
-  color: var(--royal-purple-light);
+  color: var(--medium-purple);
 }
 
 .formcontato__textarea::placeholder {
@@ -621,7 +615,7 @@ section.formcontato {
 }
 
 .formcontato__textarea:focus::placeholder {
-  color: var(--royal-purple-light);
+  color: var(--medium-purple);
   bottom: 2%;
 }
 
@@ -636,15 +630,15 @@ section.formcontato {
 }
 
 .formcontato__result--success {
-  color: #04aa6d;
+  color: var(--jade);
 }
 
 .formcontato__result--error {
-  color: rgb(255, 73, 73);
+  color: var(--red-crayola);
 }
 
 .formcontato__result--error a {
-  color: rgb(255, 73, 73);
+  color: var(--red-crayola);
   text-decoration: underline;
 }
 
@@ -677,11 +671,11 @@ section.footer {
 @keyframes box-animation {
   0% {
     width: 100%;
-    left: 0%;
+    left: 0;
     opacity: 1;
   }
   100% {
-    width: 0%;
+    width: 0;
     left: 100%;
     opacity: 1;
   }
@@ -696,7 +690,7 @@ utilize como referência os breakpoints @media abaixo*/
   .menu nav {
     width: 70%;
     left: auto;
-    right: 0%;
+    right: 0;
   }
 
   /*title*/
@@ -835,7 +829,7 @@ utilize como referência os breakpoints @media abaixo*/
   }
 
   .menu__list__item a:hover {
-    color: var(--royal-purple-light);
+    color: var(--medium-purple);
     background-color: transparent;
   }
 
@@ -908,7 +902,6 @@ utilize como referência os breakpoints @media abaixo*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*flex: 1;*/
   }
 
   .formcontato__img {
