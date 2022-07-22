@@ -1,4 +1,3 @@
-
 :root {
   /*--eerie-black: #191716ff;*/
   /*--royal-purple: #7d4ebcff;*/
@@ -14,7 +13,7 @@
   --platinum: #e2e2e2;
   --quick-silver: #a0a0a0;
   --battleship-grey: #6f6f6f;
-  --lavender-blue: #e1d0f9;
+  --lavender-blue: #ede0ff;
   --medium-purple: #a86cff;
   --royal-purple: #7d4ebc;
   --jet-2: #2f2f2f;
@@ -293,10 +292,18 @@ section.title {
 
 .title__network__item a {
   color: var(--lavender-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .title__network__item:hover {
   background-color: var(--royal-purple);
+}
+
+.title__network__icon {
+  fill: var(--lavender-blue);
 }
 
 .title__bio {
@@ -588,7 +595,7 @@ section.formcontato {
   border: none;
   background-color: var(--royal-purple);
   border-radius: 5px;
-  color: #e1d0f9;
+  color: var(--lavender-blue);
 }
 
 .formcontato__input,

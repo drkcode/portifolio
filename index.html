@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Olá, meu nome é Darlisson. Sou estudante de programação com conhecimentos em Javascript,
+    Nodejs, Java, React e Angular."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Fonte do Projeto Raleway -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
       rel="stylesheet"
@@ -21,7 +20,7 @@
       href="assets/icons/logo-light.png"
       type="image/x-icon"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Darlisson L. Silva</title>
   </head>
   <body>
@@ -29,7 +28,11 @@
       <!-- Sessão de Menu  -->
       <section class="menu">
         <header>
-          <img src="assets/icons/logo-light.png" />
+          <img
+            src="assets/icons/logo-light.png"
+            alt="Logo com as letras DL"
+            srcset="./assets/icons/logo-light.png"
+          />
           <h3 class="menu__title">Darlisson L. Silva</h3>
         </header>
         <input type="checkbox" id="menu-checkbox" />
@@ -58,22 +61,68 @@
       <!-- Sessão de Header/Title/Hero -->
       <section class="title">
         <div class="title__div">
-          <img class="title__profile" src="assets\profile2.png" />
+          <img
+            class="title__profile"
+            src="assets\profile2.png"
+            alt="Profile picture"
+          />
           <div class="title__container" id="#sobremim">
             <ul class="title__network">
               <!-- Ponha os links de suas redes sociais favoritas -->
               <li class="title__network__item">
-                <a href="http://github.com/drkcode"
-                  >Github <img src="assets/icons/arrow.png" />
+                <a class="title__network__link" href="http://github.com/drkcode"
+                  >Github
+                  <svg
+                    class="title__network__icon"
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z"
+                    />
+                  </svg>
                 </a>
               </li>
               <li class="title__network__item">
-                <a href="https://br.linkedin.com/in/darlisson-limeira-95938a171"
-                  >Linkedin <img src="assets/icons/arrow.png"
-                /></a>
+                <a
+                  class="title__network__link"
+                  href="https://br.linkedin.com/in/darlisson-limeira-95938a171"
+                  >Linkedin
+                  <svg
+                    class="title__network__icon"
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z"
+                    />
+                  </svg>
+                </a>
               </li>
               <li class="title__network__item">
-                <a href="">Curriculo <img src="assets/icons/arrow.png" /></a>
+                <a
+                  class="title__network__link"
+                  href="https://cursos.alura.com.br/emprega-one/profile/darlisson-dev"
+                  >Curriculo
+                  <svg
+                    class="title__network__icon"
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z"
+                    />
+                  </svg>
+                </a>
               </li>
             </ul>
             <h2 class="title__bio">
@@ -120,7 +169,9 @@
           <div class="skills__line">
             <div class="skills__box">
               <ul>
-                <li class="skills__img"><img src="assets/icons/html.png" /></li>
+                <li class="skills__img">
+                  <img src="assets/icons/html.png" alt="logo html 5" />
+                </li>
                 <li class="skills__name">Html 5</li>
               </ul>
             </div>
@@ -128,7 +179,7 @@
             <div class="skills__box">
               <ul>
                 <li class="skills__img">
-                  <img src="assets/icons/js.png" alt="" />
+                  <img src="assets/icons/js.png" alt="logo javascript" />
                 </li>
                 <li class="skills__name">Javascript</li>
               </ul>
@@ -137,7 +188,7 @@
             <div class="skills__box">
               <ul>
                 <li class="skills__img">
-                  <img src="assets/icons/java.png" alt="" />
+                  <img src="assets/icons/java.png" alt="logo java" />
                 </li>
                 <li class="skills__name">Java</li>
               </ul>
@@ -146,7 +197,7 @@
             <div class="skills__box">
               <ul>
                 <li class="skills__img">
-                  <img src="assets/icons/nodejs.png" alt="" />
+                  <img src="assets/icons/nodejs.png" alt="logo nodejs" />
                 </li>
                 <li class="skills__name">Node JS</li>
               </ul>
@@ -155,7 +206,7 @@
             <div class="skills__box">
               <ul>
                 <li class="skills__img">
-                  <img src="assets/icons/react.png" alt="" />
+                  <img src="assets/icons/react.png" alt="logo reactjs" />
                 </li>
                 <li class="skills__name">React</li>
               </ul>
@@ -164,7 +215,7 @@
             <div class="skills__box">
               <ul>
                 <li class="skills__img">
-                  <img src="assets/icons/css.png" alt="" />
+                  <img src="assets/icons/css.png" alt="logo css 3" />
                 </li>
                 <li class="skills__name">CSS</li>
               </ul>
@@ -181,7 +232,10 @@
             <div class="hobbies__box">
               <ul>
                 <li class="hobbies__img">
-                  <img src="assets/icons/sports.png" alt="" />
+                  <img
+                    src="assets/icons/sports.png"
+                    alt="icon de cor roxa de pessoa sobre um skate"
+                  />
                 </li>
                 <li class="hobbies__name">Praticar corrida</li>
               </ul>
@@ -190,7 +244,10 @@
             <div class="hobbies__box">
               <ul>
                 <li class="hobbies__img">
-                  <img src="assets/icons/guitar.png" alt="" />
+                  <img
+                    src="assets/icons/guitar.png"
+                    alt="icon de cor roxa de um violão"
+                  />
                 </li>
                 <li class="hobbies__name">Tocar violão</li>
               </ul>
@@ -199,7 +256,10 @@
             <div class="hobbies__box">
               <ul>
                 <li class="hobbies__img">
-                  <img src="assets/icons/headphone.png" alt="" />
+                  <img
+                    src="assets/icons/headphone.png"
+                    alt="icon de cor roxa de um headphone"
+                  />
                 </li>
                 <li class="hobbies__name">Ouvir música</li>
               </ul>
@@ -208,7 +268,10 @@
             <div class="hobbies__box">
               <ul>
                 <li class="hobbies__img">
-                  <img src="assets/icons/tv.png" alt="" />
+                  <img
+                    src="assets/icons/tv.png"
+                    alt="icon de cor roxa de um monitor"
+                  />
                 </li>
                 <li class="hobbies__name">Assistir séries</li>
               </ul>
@@ -217,7 +280,10 @@
             <div class="hobbies__box">
               <ul>
                 <li class="hobbies__img">
-                  <img src="assets/icons/forkspoon.png" alt="" />
+                  <img
+                    src="assets/icons/forkspoon.png"
+                    alt="icon de cor roxa de um faca e uma colher"
+                  />
                 </li>
                 <li class="hobbies__name">Cozinhar</li>
               </ul>
@@ -241,7 +307,7 @@
                   />
                 </li>
                 <li class="academic__courses__item__title">
-                  <h4>Análise e Desenvolvimento de Sistemas.</h4>
+                  <h3>Análise e Desenvolvimento de Sistemas.</h3>
                 </li>
                 <li class="academic__courses__item__subtitle">
                   <p>2015/Incompleto - UNIFACEMA</p>
@@ -276,7 +342,7 @@
                   <img src="assets/logo-alura.png" alt="Logo com text Udemy" />
                 </li>
                 <li class="academic__courses__item__title">
-                  <h4>Programa ONE - Oracle Next Education</h4>
+                  <h3>Programa ONE - Oracle Next Education</h3>
                 </li>
                 <li class="academic__courses__item__subtitle">
                   <p>Em andamento - Alura</p>
@@ -311,7 +377,7 @@
                   <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
                 </li>
                 <li class="academic__courses__item__title">
-                  <h4>React - The Complete Guide</h4>
+                  <h3>React - The Complete Guide</h3>
                 </li>
                 <li class="academic__courses__item__subtitle">
                   <p>Em andamento - Academind (Udemy)</p>
@@ -346,7 +412,7 @@
                   <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
                 </li>
                 <li class="academic__courses__item__title">
-                  <h4>NodeJS - The Complete Guide</h4>
+                  <h3>NodeJS - The Complete Guide</h3>
                 </li>
                 <li class="academic__courses__item__subtitle">
                   <p>Em andamento - Academind (Udemy)</p>
@@ -361,7 +427,7 @@
                   <img src="assets/logo-udemy.svg" alt="Logo com text Udemy" />
                 </li>
                 <li class="academic__courses__item__title">
-                  <h4>Java - POO</h4>
+                  <h3>Java - POO</h3>
                 </li>
                 <li class="academic__courses__item__subtitle">
                   <p>Em andamento - Nelio Alves (Udemy)</p>
@@ -384,6 +450,7 @@
             <img
               class="experience__img"
               src="assets/projects-mockups/hangman-game.png"
+              alt="imagem contendo as versoes do projeto em executando em smarphone, desktop, tablet e notebook"
             />
             <div class="experience__info">
               <h2 class="experience__title-info">Hangman Game</h2>
@@ -417,6 +484,7 @@
             <img
               class="experience__img"
               src="assets/projects-mockups/decodificador.png"
+              alt="imagem contendo as versoes do projeto em executando em smarphone, desktop, tablet e notebook"
             />
             <div class="experience__info">
               <h2 class="experience__title-info">
@@ -453,6 +521,7 @@
             <img
               class="experience__img"
               src="assets/projects-mockups/awstodo.png"
+              alt="imagem contendo as versoes do projeto em executando em smarphone, desktop, tablet e notebook"
             />
             <div class="experience__info">
               <h2 class="experience__title-info">ToDo App</h2>
@@ -484,6 +553,7 @@
             <img
               class="experience__img"
               src="assets/projects-mockups/rock_paper_scissors.png"
+              alt="imagem contendo as versoes do projeto em executando em smarphone, desktop, tablet e notebook"
             />
             <div class="experience__info">
               <h2 class="experience__title-info">
@@ -517,6 +587,7 @@
             <img
               class="experience__img"
               src="assets/projects-mockups/dlassessoria.png"
+              alt="imagem contendo as versoes do projeto em executando em smarphone, desktop, tablet e notebook"
             />
             <div class="experience__info">
               <h2 class="experience__title-info">
